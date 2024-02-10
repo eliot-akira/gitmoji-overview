@@ -59,24 +59,26 @@ for (const category of [
 
   doc += `## ${category[0].toUpperCase() + category.slice(1)}
 
-| Emoji | Code | Emoji | Code | Emoji | Code |
-|---|---|---|---|---|---|
+| Emoji | Code | Emoji | Code |
+|---|---|---|---|
 `
 
-for (let i=0, len=emojis.length; i < (len+3); i+=3) {
-  for (let j=0; j <= 2; j++) {
+const columnsPerRow = 2
+
+for (let i=0, len=emojis.length; i < (len+3); i+= columnsPerRow) {
+  for (let j=0; j <= columnsPerRow-1; j++) {
     const e = emojis[i + j]
     if (!e) {
       // Fill the rest of table columns for this row
       if (j===0) break
       if (j===1) doc += `| &nbsp; | &nbsp; `
-      if (j<=2) doc += `| &nbsp; | &nbsp; `
+      // if (j<=2) doc += `| &nbsp; | &nbsp; `
       doc += `|\n`
       break
     }
     const [emoji, code] = e
     doc += `| <span style="font-size:${emojiFontSize}">${emoji}</span> | \`${code}\` `
-    if (j===2) doc += `|\n`
+    if (j===columnsPerRow-1) doc += `|\n`
   }
 }
 
