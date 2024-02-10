@@ -1,0 +1,23 @@
+{
+  "name": "gitmoji-overview",
+  "description": "Overview of emojis for use in Git commit messages and GitHub Markdown",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun ."
+  },
+  "tags": [
+    "emoji",
+    "git",
+    "github",
+    "gitmoji",
+    "markdown"
+  ],
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "license": "MIT"
+}
