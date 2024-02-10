@@ -19,7 +19,7 @@ This is an overview of emojis for use in Git commit messages and GitHub Markdown
 `
 
 for (const { emoji, code, description } of gitmojis) {
-  doc += `| <font size="${emojiFontSize}">${emoji}</font> | \`${code}\` | ${description} |\n`
+  doc += `| ${emoji} | \`${code}\` | ${description} |\n`
 }
 
 doc += '\n\n'
@@ -77,7 +77,7 @@ for (let i=0, len=emojis.length; i < (len+3); i+= columnsPerRow) {
       break
     }
     const [emoji, code] = e
-    doc += `| <font size="${emojiFontSize}">${emoji}</font> | \`${code}\` `
+    doc += `| ${emoji} | \`${code}\` `
     if (j===columnsPerRow-1) doc += `|\n`
   }
 }
