@@ -2,6 +2,15 @@
 
 This is an overview of emojis for use in Git commit messages and GitHub Markdown. Based on [Gitmoji](https://github.com/carloscuesta/gitmoji) and [this Gist with the complete list of GitHub emoji markup](https://gist.github.com/rxaviers/7360908).
 
+#### Table of contents
+
+- [Git messages](#git-messages)
+- [People](#people)
+- [Nature](#nature)
+- [Objects](#objects)
+- [Places](#places)
+- [Symbols](#symbols)
+
 ## Git messages
 
 | Emoji | Code | Description |
